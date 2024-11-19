@@ -46,7 +46,7 @@ public class Empregado {
 
     public Empregado() {}
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
