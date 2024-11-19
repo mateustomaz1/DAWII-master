@@ -1,0 +1,14 @@
+services:
+  postgres:
+    container_name: daw 
+    hostname: daw
+    image: postgres:latest
+    restart: always
+    volumes:
+      - ./local/path:/container/path
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: 12345678
+      POSTGRES_DB: daw
+    ports:
+      - "5432:5432"
