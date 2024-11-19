@@ -18,7 +18,7 @@ public class MainEmpregadoSave {
 
 			empregado.setNome("Mateus");
 			empregado.setSobrenome("Tomaz");
-			empregado.setCpf("111111111-11");
+			empregado.setCpf(""+System.nanoTime());
 			empregado.setDataNascimento(LocalDate.now());
 			empregado.setEndereco("Joaquim Manoel 42");
 			empregado.setSalario(BigDecimal.valueOf(1245,24));
