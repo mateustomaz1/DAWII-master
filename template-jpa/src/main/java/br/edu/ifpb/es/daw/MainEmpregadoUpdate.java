@@ -3,7 +3,7 @@ package br.edu.ifpb.es.daw;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-import br.edu.ifpb.es.daw.dao.EmpregradoDAO;
+import br.edu.ifpb.es.daw.dao.EmpregadoDAO;
 import br.edu.ifpb.es.daw.dao.impl.EmpregadoDAOImpl;
 import br.edu.ifpb.es.daw.entities.Empregado;
 import jakarta.persistence.EntityManagerFactory;
@@ -13,7 +13,7 @@ public class MainEmpregadoUpdate {
 
 	public static void main(String[] args) throws DawException {
 		try(EntityManagerFactory emf = Persistence.createEntityManagerFactory("daw")) {
-			EmpregradoDAO dao = new EmpregadoDAOImpl(emf);
+			EmpregadoDAO dao = new EmpregadoDAOImpl(emf);
 			Empregado empregado = new Empregado();
 
 			empregado.setNome("Mateus");
